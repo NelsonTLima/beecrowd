@@ -1,5 +1,5 @@
 [package]
-name = "rust"
+name = "1008-salario"
 version = "0.1.0"
 edition = "2021"
 
