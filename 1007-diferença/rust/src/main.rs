@@ -18,6 +18,6 @@ fn main() {
     let b = input_i64();
     let c = input_i64();
     let d = input_i64();
-    let diferenca = (a * b - c * d);
+    let diferenca = a * b - c * d;
     println!("DIFERENCA = {}", diferenca);
 }
