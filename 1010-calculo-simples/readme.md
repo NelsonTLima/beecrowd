@@ -12,7 +12,7 @@ A saída deverá ser uma mensagem conforme o exemplo fornecido abaixo, lembrando
 
 |**Exemplos de Entrada**|**Exemplos de Saída**          |
 |   :---            |   :---                    |
-|12 1 5.30          |VALOR A PAGARL: R$ 15.50   |
+|12 1 5.30          |VALOR A PAGAR: R$ 15.50   |
 |16 2 5.10          |                           |
 |                   |                           |
 |13 2 15.30         |VALOR A PAGAR: R$ 51.40    |
