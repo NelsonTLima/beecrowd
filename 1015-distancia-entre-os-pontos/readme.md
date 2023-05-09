@@ -6,7 +6,7 @@ Distância = $\sqrt{(x2 - x1)^2 + (y2 - y1)^2}$
 
 ### Entrada
 
-O arquivo de entrada contém duas linhas de dados. A primeira linha contém dois valores de ponto flutuante: x1 y1 e a segunda linhja contêm dois valores de ponto flutuante x2 y2.
+O arquivo de entrada contém duas linhas de dados. A primeira linha contém dois valores de ponto flutuante: x1 y1 e a segunda linha contêm dois valores de ponto flutuante x2 y2.
 
 ### Saída
 
