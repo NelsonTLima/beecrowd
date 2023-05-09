@@ -17,9 +17,9 @@ O arquivo de saída deverá conter 5 linhas de dados. Cada linha corresponde a u
 
 |**Exemplos de Entrada**|**Exemplos de Saída**  |
 |   :---            |   :---            |
-|3.0 4.0 5.2        |TRIANGULO: 7.8000  |
+|3.0 4.0 5.2        |TRIANGULO: 7.800   |
 |                   |CIRCULO: 84.949    |
-|                   |TRAPEZIO: 18.000   |
+|                   |TRAPEZIO: 18.200   |
 |                   |QUADRADO: 16.000   |
 |                   |RETANGULO: 12.000  |
 |                   |                   |
