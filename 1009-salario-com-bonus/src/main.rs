@@ -21,5 +21,5 @@ fn main() {
     let salary = parse_f64(input());
     let sales = parse_f64(input());
     let total = salary + sales * 0.15;
-    println!("TOTAL = {:.2}", total);
+    println!("TOTAL = R$ {:.2}", total);
 }
