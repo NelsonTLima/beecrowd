@@ -15,7 +15,7 @@ Apresente o valor que representa o consumo médio do automóvel com 3 casa após
 |500                    |14.286 km/l        |
 |35.0                   |                   |
 |                       |                   |
-|2254                   |18,119 km/l        |
+|2254                   |18.119 km/l        |
 |124.4                  |                   |
 |                       |                   |
 |4554                   |9.802 km/l         |
