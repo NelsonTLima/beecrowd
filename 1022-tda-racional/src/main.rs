@@ -1,13 +1,13 @@
 use std::io;
 
 //greatest common divisor.
-fn gcd(x : i64 , y : i64) -> i64{
+fn gcd(n : i64 , d : i64) -> i64{
     let smaller;
-    if x > y {smaller = y;} else {smaller = x;}
+    if n > d {smaller = d;} else {smaller = n;}
 
     let mut divisor = smaller;
     while divisor != 0{
-        if (x % divisor == 0) && (y % divisor == 0) {break}
+        if (n % divisor == 0) && (d % divisor == 0) {break}
         divisor = divisor - 1;
     }
     return divisor
@@ -20,8 +20,13 @@ fn fraction_sum(n1 : i64, d1 : i64,n2 : i64, d2 : i64) -> (i64, i64) {
 }
 
 fn fraction_sub(n1 : i64, d1 : i64,n2 : i64, d2 : i64) -> (i64, i64) {
-    let n = n1 * d2 - n2 * d1;
-    let d = d1 * d2;
+    let mut n = n1 * d2 - n2 * d1;
+    let mut d = d1 * d2;
+
+    if (d < 0) & (n > 0){
+        n = - n;
+        d = - d;
+    }
     return (n, d)
 }
 
@@ -32,8 +37,13 @@ fn fraction_mul(n1 : i64, d1 : i64,n2 : i64, d2 : i64) -> (i64, i64) {
 }
 
 fn simplify_fraction(n : i64, d : i64) -> (i64, i64){
-    let sn = n/gcd(n, d);
-    let sd = d/gcd(n, d);
+    let mut sn = n/gcd(n, d);
+    let mut sd = d/gcd(n, d);
+
+    if (sd < 0) && (sn > 0){
+        sn = - sn;
+        sd = - sd;
+    }
     return (sn, sd);
 }
 
@@ -71,7 +81,7 @@ fn main() {
             //let (num, den) = fraction_sum(num_1, den_1, -num_2, den_2);
             let (num, den) = fraction_sub(num_1, den_1, num_2, den_2);
             let (r_num, r_den) = simplify_fraction(num, den);
-            result = format!("{}/{} = -{}/{}",num, den, r_num, -r_den);
+            result = format!("{}/{} = {}/{}",num, den, r_num, r_den);
             results.push(result);
             }
 
