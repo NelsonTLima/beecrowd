@@ -7,11 +7,13 @@ int main() {
   int n;
   while(cin >> n && n != 0){
 
-    int matrix[n][n];
-    for (int i=1; i < n + 1; i++){
+    for (int i=1; i <= n; i++){
       for (int j=i-1; j <= n - i; j++){
         for (int k=i-1; k <= n - i; k++){
           matrix[j][k] = i;
+          if (j > i-1 && j < n - i){
+            k += n - 2*i;
+          }
         }
       }
     }
